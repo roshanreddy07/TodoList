@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Todo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="todo-container">
+    <h1 class="title">Todo List</h1>
+    <div id="todo-list-main">
+      <input placeholder="Add a task" class="font-padding-typeOne" id="todo-input" required="true" />
+
+      <button type="button" class="add-task-btn font-padding-typeOne" onclick="addTask()">
+        Add Task
+      </button>
+    </div>
+    <table class="todo-table">
+      <thead>
+        <tr></tr>
+      </thead>
+      <tbody id="todoTableData"></tbody>
+    </table>
+    <hr />
+    <h2>Total Tasks: <span id="total-tasks"></span></h2>
+  </div>
+  <script src="todolist.js"></script>
+</body>
+
+</html>
